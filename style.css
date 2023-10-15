@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+.blurred {
+  filter: blur(3px);
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  padding: 2rem;
+  background-color: hsla(0, 75%, 19%, 1);
+  border-radius: 30px;
+  margin: 1rem;
+}
+
+.header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.measurement-system {
+  max-width: 80px;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.5rem;
+  border-radius: 20px;
+  background-color: rgb(98, 32, 32);
+}
+
+.metric,
+.imperial {
+  width: 40px;
+  text-align: center;
+}
+
+.active {
+  color: hsla(0, 75%, 19%, 1);
+  background-color: white;
+  border-radius: 50%;
+}
+
+.search-container {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.search-bar {
+  flex: 1;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  padding: 1rem;
+  color: white;
+  background-color: rgb(98, 32, 32);
+  outline: none;
+}
+
+input::placeholder {
+  color: white;
+  opacity: 0.3;
+}
+
+button {
+  height: 2rem;
+  width: 2rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background-color: rgb(98, 32, 32);
+  color: white;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: rgb(120, 46, 46);
+  cursor: pointer;
+}
+
+.main-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.name-region {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.country {
+  margin-bottom: 25px;
+}
+
+.temp {
+  font-size: 60px;
+  padding-right: 30px;
+}
+
+.details {
+  height: 93px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 30px;
+  border-left: 3px rgb(98, 32, 32) solid;
+}
+
+.icon {
+  border: 2px white solid;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 11px;
+}
